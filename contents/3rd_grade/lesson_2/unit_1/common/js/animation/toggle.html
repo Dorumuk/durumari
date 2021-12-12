@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle - animation</title>
+    </link>
+    <script src="../anime.min.js"></script>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .toggle-wrapper {
+            display: inline-block;
+            background-color: rgba(0,0,0,0.4);
+            padding: 5px;
+            height: 25px;
+            width: 60px;
+            border-radius: 50px;
+        }
+        .toggle-btn {
+            background-color: #FFF;
+            border: 0;
+            box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            width: 23px;
+            height: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="toggle-wrapper">
+            <button class="toggle-btn"></button>
+        </div>
+    </section>
+    <script>
+        const btnEl = document.querySelector(".toggle-btn");
+        let toggle = false;
+
+        btnEl.addEventListener('click', ()=> {
+            const tl = anime.timeline({
+                duration: 750,
+                easing: "easeOutExpo",
+            })
+            .add({
+                targets: btnEl,
+                translateX: toggle? 0 : 35
+            })
+            .add({
+                targets: '.toggle-wrapper',
+                backgroundColor: toggle? 'rgba(0,0,0,0.4)' : 'rgb(95, 158, 160)'
+            },"-=500")
+            .add({
+                targets: 'section',
+                backgroundColor: toggle? '#fff' : 'rgba(0,0,0,0.4)'
+            },"-=300")
+
+            if (toggle) {
+                toggle = false;
+            } else {
+                toggle = true;
+            }
+        })
+    </script>
+</body>
+
+</html>

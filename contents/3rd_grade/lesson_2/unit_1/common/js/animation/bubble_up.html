@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubble up - animation</title>
+    </link>
+    <script src="../anime.min.js"></script>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bubble-box {
+            display: inline-block;
+            background-color: gainsboro;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="bubble-box">
+            <p>bubble up box</p>
+        </div>
+    </section>
+    <script>
+        // 말풍선 애니메이션
+        const bubbleEl = document.querySelector('.bubble-box');
+        bubbleEl.style.opacity = 0;
+
+        const offsetX = 0, offsetY = -50; // arg
+        anime({
+            targets: ".bubble-box",
+            duration: 500,
+            translateX: offsetX,
+            translateY: offsetY,
+            opacity: 1,
+            easing: 'easeInExpo'
+        })
+    </script>
+</body>
+
+</html>

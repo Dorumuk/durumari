@@ -1,0 +1,14 @@
+/**
+  사용자 지정 css 속성
+  https://developer.mozilla.org/ko/docs/Web/CSS/Using_CSS_custom_properties
+*/
+:root {
+  /* color */
+  --main-bg-color: #fff;
+
+  /* [font color] */
+  --common-font-color: #000;
+
+  /* rgba */
+  --primary-rgba: 255, 255, 255, 1;
+}

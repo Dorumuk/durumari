@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  background-color: rgba(230, 230, 250, 1);
+}
+
+.text-center {
+  text-align: center;
+  justify-content: center;
+}
+
+.haeder {
+  
+}
+
+#bg_container > .bg {
+  background-color: rgba(230, 230, 250, 1);
+  /* background-image: url("../images/bg.jpg"); */
+}
+
+#div_main {
+  left: 50%;
+  transform-origin: 0px 0px;
+  transform: translateX(-50%);
+}
+
+.textbox {
+  word-break: break-all;
+  pointer-events: auto;
+  overflow: auto;
+  /*letter-spacing: -0.61px*/ 
+  /* 추가 */
+  pointer-events: auto;
+  word-break: break-word;
+}
+
+.textbox > .content {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  /* 추가 */
+  padding: 0rem;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+/* 텍스트 컴포넌트 */
+.content > p > span {
+  font-family: Malgun Gothic;
+  font-weight: 700;
+  line-height: 1.330078;
+}
+.content > p > span.type0 {
+  font-size: 2.4rem;
+}
+.content > p > span.type1 {  
+  font-size: 2.8rem;
+}
+.content > p > span.type2 {
+  font-size: 3.2rem;
+}
+.content > p > span.type3 {
+  font-size: 3.6rem;
+}
+
+/* 컨테이너 스타일 */
+.common-container {
+  background-color: rgba(255, 235, 205, 1);
+  border-radius: 15px;
+}
+
+.obj-container {
+  background-color: rgba(173, 216, 230, 1);
+  border-radius: 15px;
+}

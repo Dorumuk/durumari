@@ -1,0 +1,71 @@
+#root_container {
+  position: absolute;
+  width: 1280px;
+  height: 800px;
+  
+  transform-origin: 0 0;
+}
+  
+#bg_container .bg {
+  /* 개발 마무리 시점에서 주석 처리 */
+  position: absolute;
+  left: -60px;
+  /*------------------------------*/
+
+  width: 1400px;
+  height: 800px;
+}
+  
+#bg_container .bg:nth-child(1) {
+  /* background-image: url(); */
+  background-size: 1400px 800px;
+}
+
+/* A6(SM-580) */
+@media (max-width: 1920px) {
+  #content_container {
+    position: absolute;
+    width: 1280px;
+    height: 800px;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+}
+
+  /* S6 */
+/* @media (max-width: 2000px) {
+  #content_container {
+    position: absolute;
+    width: 1334px;
+    height: 800px;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+} */
+
+
+/* A6(SM-580) */
+/* @media (max-width: 1920px) {
+  #content_container {
+    position: absolute;
+    width: 1280px;
+    height: 800px;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+} */
+
+  /* S6 */
+/* @media (max-width: 2000px) {
+  #content_container {
+    position: absolute;
+    width: 1334px;
+    height: 800px;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+} */

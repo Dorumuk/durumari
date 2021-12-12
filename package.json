@@ -1,0 +1,47 @@
+{
+  "name": "wisecamp-science",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "css-loader": "^6.5.1",
+    "lodash": "^4.17.21",
+    "node-sass": "^7.0.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "dotenv": "^10.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --env NODE_ENV=development",
+    "watch": "webpack -w --env NODE_ENV=development",
+    "bundle": "webpack --env NODE_ENV=production",
+    "build": "webpack --env NODE_ENV=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/visangclbee/wisecamp-science.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/visangclbee/wisecamp-science/issues"
+  },
+  "homepage": "https://gitlab.com/visangclbee/wisecamp-science#readme"
+}

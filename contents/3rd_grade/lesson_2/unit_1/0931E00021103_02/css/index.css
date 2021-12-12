@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#root_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* bg_container */
+#bg_container .bg1 {
+    background-image: url("../../common/images/background.jpg");
+    background-repeat: no-repeat;
+    width: 1280px; height: 800px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#bg_container .bg2 {
+    background-color: beige;
+    background-repeat: no-repeat;
+    width: 1280px; height: 800px;
+    overflow: hidden;
+    background-size: cover;
+
+    /* 나중에 지워야 함 */
+    position: absolute; top: 0; left: 0;
+}
+
+/* content_container */
+#content_container {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 10;
+}
+/* header */
+.header .title_box {
+    position: absolute;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.header .title_box .title {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+}
+.btn_audio {
+    position: absolute;
+    top: 20px; right: 20px;
+}
+
+/* content_box */
+.icon {
+    background: url("../images/icon_bulb.jpg") no-repeat;
+    width: 53px; height: 55px;
+    position: absolute; top: 20px; left: 20px;
+}
+.content { 
+    position: absolute;  top: 30px; left: 80px;
+    font-size: 28px;
+}
+.heart_box {
+    position: absolute; top: 100px; right: 150px;
+    width: 300px; 
+    display: flex;
+    justify-content: space-between;
+}
+.heart_box .heart {
+    background: url("../images/img_heart.png") no-repeat;
+    width: 45px; height: 45px;
+    background-size: contain;
+}
+
+.card_box {
+    width: 890px; height: 355px;
+    position: absolute;
+    top: 30%; left: 50%; transform: translateX(-50%);
+}
+
+.card_box .card {
+    width: 106px; height: 154px; 
+    background-image: url("../images/card_back.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+}
+#c_2 { left: 110px; }
+#c_3 { left: 224px; }
+#c_4 { left: 338px; }
+#c_5 { top: 200px; right: 338px; }
+#c_6 { top: 200px; right: 224px; }
+#c_7 { top: 200px; right: 110px; }
+#c_8 { top: 200px; }
